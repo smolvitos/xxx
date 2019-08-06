@@ -1,0 +1,95 @@
+body {
+  padding: 50px;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 5px
+}
+
+.name {
+    color: black;
+    padding: 14px 16px;
+    text-align: center;
+    display: block;
+}
+
+.card {
+  border: 2px solid #fafbdf;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  background-color: rgb(245, 248, 250);
+}
+
+input {
+    margin: 10px;    
+}
+
+.button {
+    background-color: rgb(33, 132, 79);
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid #00B7FF;
+    padding: 5px;
+}
+
+textarea {
+    border: none;
+    background-color: #e4ef48;
+    color: black;
+}
+
+textarea:focus {
+    background-color: rgb(141, 223, 255);
+}
+
+.error {
+    background-color: rgb(251, 131, 62);
+    padding: 10px;
+}
+
+.info {
+  background-color: rgb(34, 191, 253);
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(179, 227, 245);
+}
+
+.menu-item {
+    float: right;
+}
+
+.menu-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 6px;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  background-color: rgb(221, 228, 200);
+}

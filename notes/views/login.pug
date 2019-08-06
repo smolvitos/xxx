@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div(align='center')
+    h1= title.toUpperCase()
+    p 
+        | Welcome to #{title} page. 
+        | Not 
+        a(href='register') register
+        |  yet?
+    form(method='post')
+        input(type='text' name='login' placeholder='Login')
+        br
+        input(type='password' name='pass' placeholder='Pass')
+        br
+        input(type='submit' class='button' value='LogIn')
+    include messages

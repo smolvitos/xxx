@@ -1,0 +1,10 @@
+if (locals.user)
+    ul.menu
+        li.menu-item.name
+            | #{user.name}
+        li.menu-item 
+            a(href='/main') Home
+        li.menu-item 
+                a(href='/add') Add
+        li.menu-item
+            a(href='/logout') Exit

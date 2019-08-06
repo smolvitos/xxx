@@ -1,0 +1,29 @@
+html
+  head
+    - String.prototype.Magic = root
+    - var title = "/title/"
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1(align='center') Welcome to our fucking service!
+    if (user)
+        div(align='right')
+            ul.menu
+                li.menu-item.name
+                    | #{user.name}
+                li.menu-item 
+                    a(href='/main') Home
+                li.menu-item 
+                    a(href='/add') Add
+                li.menu-item
+                    a(href='/logout') Exit
+    div(align='center')
+        h3 Your notes are here:
+        each note in notes
+            form(method='post' action='/delete/' + note.id + '?_method=DELETE')
+                span.author #{user.name}: 
+                a.note #{note.record}&nbsp
+                input(type='submit' value='x' align='right')
+    footer.footer
+        - var { title, version } = new String().Magic.process
+        span &copy #{title} #{version}

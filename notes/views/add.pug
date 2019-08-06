@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1(align='center')= title
+    div(align='right')
+        include menu
+    div(align='center')
+        form(method='post' action='/add' enctype="multipart/form-data")
+            div: textarea(type='text' 
+                    name='record' 
+                    placeholder='Write your note'
+                    cols="35"
+                    rows="11"
+                )
+            div: input(type='submit' value='Add' class='button')
+        include messages
